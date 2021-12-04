@@ -52,9 +52,9 @@ public class AdminDeleteProducts extends HttpServlet {
 			session.setAttribute("Delete", "Success");
 			session.setMaxInactiveInterval(15);
 			if (file.delete()) {
-				System.out.println("Xóa file: " + file.getName());
+				System.out.println("Xoa file: " + file.getName());
 			} else {
-				System.out.println("Xóa file");
+				System.out.println("Xoa file");
 			}
 			response.sendRedirect("AdminManagaProductController");
 		} else {
